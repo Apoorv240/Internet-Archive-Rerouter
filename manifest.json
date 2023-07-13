@@ -1,0 +1,30 @@
+{
+	"manifest_version": 3,
+	"name": "Internet Archive Rerouter",
+	"version": "1.0",
+	"description": "Reroutes you to the same page on the Internet Archive",
+
+	"background": {
+		"service_worker": "background.js"
+	},
+
+	"permissions": ["activeTab"],
+
+	"action": {
+		"default_title": "Open in the Internet Archive"
+	},
+
+	"icons": {
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+
+	"commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  }
+}
